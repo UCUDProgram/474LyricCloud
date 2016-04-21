@@ -19,6 +19,7 @@ app.controller('myCtrl', function($scope, $http) {
             $scope.title = response.data[0].title;
             $scope.lyrics = response.data[0].snippet;
             $scope.artist = response.data[0].artist.name;
+            $scope.url = response.data[0].url;
         });
         }
 });
